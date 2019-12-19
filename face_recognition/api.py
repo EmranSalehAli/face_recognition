@@ -5,6 +5,8 @@ import dlib
 import numpy as np
 from PIL import ImageFile
 
+from pkg_resources import resource_filename
+
 # try:
 #     import face_recognition_models
 # except Exception:
@@ -26,7 +28,7 @@ def cnn_face_detector_model_location():
 # predictor_5_point_model = face_recognition_models.pose_predictor_five_point_model_location()
 # pose_predictor_5_point = dlib.shape_predictor(predictor_5_point_model)
 
-cnn_face_detection_model = cnn_face_detector_model_location()#face_recognition_models.cnn_face_detector_model_location()
+cnn_face_detection_model = cnn_face_detector_model_location()  #face_recognition_models.cnn_face_detector_model_location()
 cnn_face_detector = dlib.cnn_face_detection_model_v1(cnn_face_detection_model)
 
 # face_recognition_model = face_recognition_models.face_recognition_model_location()
