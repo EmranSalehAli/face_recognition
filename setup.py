@@ -17,10 +17,10 @@ requirements = [
     'Pillow'
 ]
 
-test_requirements = [
-    'tox',
-    'flake8==2.6.0'
-]
+# test_requirements = [
+#     'tox',
+#     'flake8==2.6.0'
+# ]
 
 setup(
     name='face_recognition',
@@ -60,6 +60,6 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    test_suite='tests',
-    tests_require=test_requirements
+    # test_suite='tests',
+    # tests_require=test_requirements
 )
